@@ -1,0 +1,60 @@
+.dropdown_search {
+  .p-component {
+    box-shadow: none !important;
+    min-width: 50vw;
+    padding-left: 5%;
+    height: 5vh;
+  }
+  .p-component:hover {
+    border: 1px solid #ced4da;
+  }
+  .p-component:focus {
+    border: 1px solid #ced4da;
+  }
+}
+.dropdown_search {
+  margin-top: 3%;
+  min-width: 300px;
+}
+
+.dropdown_search {
+  .p-autocomplete-panel {
+    .p-autocomplete-items {
+      .p-autocomplete-item:hover {
+        background-color: #1565c0 !important;
+        color: white !important;
+      }
+    }
+  }
+}
+
+.search_icon {
+  z-index: 10;
+  margin-top: 0.3% !important;
+}
+
+.dropprices_div_all > .p-dropdown > .p-dropdown-trigger > .p-icon {
+  display: none !important;
+}
+
+.autocomplete_prices_option {
+  max-width: 30vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.autocomplete_prices_option_name {
+  max-width: 20vw;
+  min-width: 20vw;
+  overflow: hidden;
+  color: black;
+  font-weight: 600;
+}
+
+.autocomplete_prices_option_count {
+  margin-left: 5vw;
+}
+
+.autocomplete_prices_option_price {
+  margin-left: 5vw;
+}

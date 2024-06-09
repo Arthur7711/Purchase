@@ -1,0 +1,105 @@
+.navbar {
+  padding: 0 24px;
+  margin-top: 48px;
+  max-width: 300px;
+  min-width: 280px;
+  .titles {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 22px;
+    margin-left: 20px;
+  }
+  .tabs {
+    margin: 26px 0 26px 20px;
+
+    .links {
+      font-style: normal;
+      font-size: 16px;
+      line-height: 18px;
+      color: var(--vt-c-text-black);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .selectedItem {
+      color: var(--vt-c-electric-blue);
+      font-weight: 700 !important;
+    }
+  }
+  .line {
+    border: 1px solid var(--vt-c-light-white);
+    margin-bottom: 40px;
+  }
+  .dateDescription {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .buttonBox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 16px 0;
+    .button {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 4px 8px;
+      // width: 100%;
+      height: 34px;
+      background: var(--vt-c-white);
+      border-radius: 5px;
+      border: none; 
+      cursor: pointer;
+      color: var(--vt-c-text-black);
+    }
+    .activeButton {
+      background: linear-gradient(0deg, rgba(21, 101, 192, 0.7), rgba(21, 101, 192, 0.7)),
+        var(--vt-c-white);
+      color: var(--vt-c-white);
+    }
+  }
+  .dateContainer {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  .datePickerCalendar {
+    width: 130px !important;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    .p-datepicker-trigger {
+      background: none;
+      border: 1px solid #fff;
+      width: 24px;
+      box-shadow: none !important;
+    }
+    .calendarInputClassName {
+      border: none;
+    }
+    .calendarInputClassName:focus {
+      box-shadow: none !important;
+    }
+  }
+}
+
+.dateContainer {
+  width: 10vw;
+}
+
+@media only screen and (max-width: 650px) {
+  .navbar {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 50px;
+    .titles {
+      margin: 0;
+    }
+  }
+}

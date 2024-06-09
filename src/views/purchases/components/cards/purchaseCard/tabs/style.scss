@@ -1,0 +1,102 @@
+.tabs-table {
+    &_no-data {
+        display: flex;
+        justify-content: center;
+    }
+    &__header {
+        color: #999;
+        font-size: 14px;
+        font-weight: 400;
+        &-btn {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            background: none;
+            color: #1565c0;
+            font-size: 14px;
+            font-weight: 600;
+            &.active {
+                margin: 0 !important;
+                color: #1154a1;
+            }
+        }
+        &--wrapper {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+    }
+    &__cell {
+        color: #1a1a1a;
+        font-size: 16px;
+        font-weight: 400;
+        &>a {
+            color: #1154a1;
+        }
+        &.text {
+            &>p {
+                max-width: 600px;
+                word-wrap: break-word;
+            }
+        }
+        &.real-name {
+            max-width: 200px;
+            word-wrap: break-word;
+        }
+        &.money {
+            text-align: right;
+            white-space: nowrap;
+        }
+        &.btn-actions {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 20px;
+            &>.btn-actions_item {
+                border: none;
+                outline: none;
+                background: none;
+                opacity: .9;
+                cursor: pointer;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    &.p-datatable>.p-datatable-wrapper {
+        border-radius: 10px;
+        &>table>thead>tr>th span {
+            margin: 0 !important;
+            &>.p-icon {
+                width: 10px;
+                height: 14px;
+                color: #727171;
+            }
+        }
+        &>.p-datatable-table {
+            &>.p-datatable-thead {
+                background-color: white;
+                top: -1px;
+                &>tr>th {
+                    padding: 0 1rem;
+                    background: none !important;
+                    border: none;
+                }
+            }
+            & .p-datatable-tbody {
+                overflow: auto !important;
+                max-height: 200px !important;
+                &>tr {
+                    border-radius: 10px;
+                    &>td {
+                        border: 1px solid #e3e3e3;
+                    }
+                }
+            }
+        }
+    }
+}

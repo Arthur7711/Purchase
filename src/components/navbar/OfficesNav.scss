@@ -1,0 +1,157 @@
+.offices_div_all {
+  margin-top: 39px;
+  max-height: 300px;
+}
+
+.offices_listbox_listbox {
+  border: none;
+  background: none !important;
+
+  .p-inputtext {
+    // border: none !important;
+    border-radius: 10px !important;
+    height: 30px;
+    width: 115%;
+    margin-left: -1rem;
+    background-color: rgba(112, 112, 112, 0.3);
+  }
+  .p-listbox-header {
+    background: none !important;
+  }
+  .p-listbox-item.p-highlight {
+    color: black;
+    background: none !important;
+  }
+  box-shadow: none !important;
+  .p-listbox-list-wrapper {
+    max-height: 450px;
+    * {
+      background: none !important;
+    }
+  }
+  .p-checkbox-box {
+    background: none !important;
+    border-radius: 2px !important;
+    border: 1px solid var(--mono-divider, #b6b5b5);
+    background: var(--mono-white, #fff);
+  }
+  .p-checkbox-box.p-highlight {
+    background: #1565c0 !important;
+    border-radius: 2px !important;
+    border-color: #1565c0 !important;
+  }
+  .p-listbox-item:hover {
+    background: none !important;
+  }
+  .p-listbox-header {
+    border-bottom: none !important;
+  }
+  .p-listbox-item:active,
+  .p-listbox-item:checked {
+    background: none !important;
+  }
+  .p-highlight {
+    background: none !important;
+  }
+}
+
+.offices_listbox_div_topbutton {
+  display: flex;
+  justify-content: space-between;
+}
+
+.offices_listbox_div_topbutton > div > button {
+  border: none;
+  background: none;
+  margin-right: 10px;
+}
+
+.offices_listbox_div_topbutton > div > button:first-child {
+  color: #1565c0;
+}
+
+.offices_listbox_div_topbutton > span:first-child {
+  color: #666666;
+}
+
+.offices_listbox_div_topbutton > div > button:not(:first-child) {
+  color: #999999;
+}
+
+.office_nav_div_option_name {
+  max-width: 165px;
+  min-width: 90%;
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+
+.office_nav_div_option_name:after {
+  content: '';
+  text-align: right;
+  position: absolute;
+  bottom: 15%;
+  right: 0;
+  left: 85%;
+  width: 10%;
+  height: 2rem;
+  background: linear-gradient(to right, rgba(253, 253, 253, 0.281), #f4f4f4 90%);
+  // filter: blur(1px);
+  pointer-events: none;
+}
+
+.custom-tooltip-offices .p-tooltip-text {
+  background-color: white;
+  color: #666666;
+  min-height: 25px;
+  padding-bottom: 5px;
+  padding-top: 1px;
+  font-size: 14px;
+}
+
+.custom-tooltip-offices.p-tooltip-right .p-tooltip-arrow {
+  background-color: #fff;
+  padding: none;
+  color: #666666;
+}
+
+////// animation frames
+///
+///
+.slide-fade-enter-active {
+  transition: all 0.5s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.5s ease-in-out;
+}
+
+.slide-fade-enter-from {
+  height: 1px;
+  overflow: hidden;
+  // opacity: 0;
+}
+.slide-fade-leave-from,
+.slide-fade-enter-to {
+  height: 800px;
+  overflow: hidden;
+  // opacity: 1;
+}
+
+.slide-fade-leave-to {
+  height: 1px;
+  overflow: hidden;
+  // opacity: 0;
+}
+
+.offices_div_button {
+  transition: all 0.3s ease-in-out;
+}
+.offices_div_button_rotate {
+  transform: rotateZ(180deg);
+}
+
+@media only screen and (max-width: 650px) {
+  .office_nav_div_option_name:after {
+    background: none;
+  }
+}

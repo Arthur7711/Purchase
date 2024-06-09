@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+:root {
+  --vt-c-white: #ffffff;
+  --vt-c-electric-blue: #1565c0;
+  --vt-c-text-black: #1a1a1a;
+  --vt-c-bold-gray: #999999;
+  --vt-c-light-white: #e3e3e3;
+  --vt-c-orange: #f57c00;
+  --vt-c-shadow-gray: rgba(129, 131, 136, 0.2);
+  --vt-c-active-item-gray: rgba(102, 102, 102, 0.2);
+  --vt-c-tabs-gray: #666666;
+  --vt-c-backgroud-gray: #f4f4f4;
+  --vt-c-dropdown-bg-gray: rgba(0, 0, 0, 0.05);
+  --vt-c-progress-green: #689f38;
+  --vt-c-border-gray: #e3e3e3;
+  --vt-c-editable-gray: #b6b6b6;
+  --vt-c-marked-text: #ffdea5;
+  --vt-c-marked_table-background: #dce8f5;
+  --vt-c-error-text: #c62828;
+}
+:root {
+  --color-background: var(--vt-c-backgroud-gray);
+
+  --section-gap: 160px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--vt-c-black);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  /* font-weight: normal; */
+}
+*:focus {
+  box-shadow: none !important;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: #f4f4f4;
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

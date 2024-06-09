@@ -1,0 +1,82 @@
+.leader_page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .leader_head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .text_possitions {
+      display: flex;
+      align-items: center;
+    }
+    .leader_possitions {
+      border: none;
+    }
+    .leader_tabs {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      .values_button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 8px 12px;
+        gap: 8px;
+        border: 1px solid var(--vt-c-light-white);
+        border-radius: 4px;
+        cursor: pointer;
+        height: 36px;
+        p {
+          color: var(--vt-c-tabs-gray);
+          font-size: 16px;
+          line-height: 18px;
+        }
+      }
+      .checked_box {
+        display: flex;
+        align-items: center;
+        border: 1px solid var(--vt-c-light-white);
+        gap: 8px;
+        border-radius: 4px;
+        padding: 8px 12px;
+        color: var(--vt-c-tabs-gray);
+        height: 36px;
+        .show_na {
+          .p-checkbox-box {
+            box-shadow: none !important;
+          }
+        }
+      }
+    }
+    .dropdown_icon_container {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      p {
+        margin-top: -4px;
+      }
+    }
+    .icon_button {
+      border: none;
+      background: none;
+      cursor: pointer;
+      margin: 0px !important;
+    }
+  }
+  .leader_body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+.chartItemsBox {
+  display: flex;
+  flex-direction: column;
+  padding-left: 50%;
+}
+.dropdown_active {
+  .p-dropdown-label {
+    color: #1565c0;
+  }
+}

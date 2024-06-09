@@ -1,0 +1,103 @@
+.tablesetup_hr_top {
+    border: 1px #e3e3e3 solid;
+    margin-top: 16px;
+}
+
+.tablesetup_div_bottom {
+    margin-top: 16px;
+}
+
+.tablesetup_div_buttongroup {
+    display: flex;
+    font-size: 13px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 10px 10px 0px;
+    button {
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+     :first-child {
+        color: #1565c0;
+    }
+}
+
+.tablesetup_buttongroup_secondbutton {
+    margin-left: 12px;
+    color: #999999;
+}
+
+.tablesetup_mapping_items {
+    display: flex;
+    border-radius: 4px;
+    padding: 6px 10px 6px 10px;
+    background-color: #f4f4f4;
+    margin-top: 10px;
+    height: min-content;
+    width: 252px;
+    .p-checkbox-box {
+        border-radius: 2px;
+    }
+    .p-highlight {
+        border-color: #1565c0 !important;
+        background-color: #1565c0 !important;
+        border-radius: 2px;
+    }
+}
+
+.purch_table_cancel_exel {
+    width: 124px;
+    height: 36px;
+    padding: 7px 20px 7px 20px;
+    gap: 6px;
+    border-radius: 10px;
+    background-color: #fff;
+    // border-color: #1565c0;
+    border: 2px #1565c0 solid;
+    color: #1565c0;
+    margin-right: 8px;
+}
+
+.purch_table_download_exel {
+    width: 124px;
+    height: 36px;
+    padding: 7px 20px 7px 20px;
+    gap: 6px;
+    border-radius: 10px;
+    background-color: #1565c0;
+    border: none;
+    color: #fff;
+}
+
+.purchtable_setup_div_all {
+    .p-checkbox,
+    .p-checkbox-box {
+        border-color: #999999 !important;
+        border-radius: 2px !important;
+    }
+    .p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box.p-highlight {
+        background-color: #1565c0 !important;
+        border: none !important;
+    }
+    .p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box.p-focus {
+        box-shadow: none !important;
+    }
+}
+
+button {
+    cursor: pointer;
+}
+
+@media only screen and (max-width:650px) {
+    .purchtable_setup_div_excel {
+        display: none !important;
+    }
+    .tablesetup_hr_top {
+        display: none !important;
+    }
+    .tablesetup_div_drag_container {
+        width: 100% !important;
+        overflow: hidden;
+    }
+}

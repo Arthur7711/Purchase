@@ -1,0 +1,48 @@
+.table_position_header {
+  background: none !important;
+  border: none !important;
+}
+
+.p-datatable .p-datatable-tbody > tr > td {
+  border: none !important;
+}
+
+.datatable_position {
+  .p-checkbox .p-checkbox-box.p-highlight {
+    background: #1565c0;
+    border: #1565c0;
+  }
+  .p-datatable .p-datatable-tbody > tr.p-highlight {
+    color: black !important;
+  }
+}
+
+.position_div_procent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 5px;
+  border-radius: 50px;
+}
+
+.datatable_position {
+  .p-datatable .p-datatable-tbody > tr.p-highlight {
+    background: none !important;
+  }
+}
+
+.position_div_middle_graph {
+  display: flex;
+  flex-direction: row;
+}
+
+div.position_div_middle_graph
+  > div
+  > div
+  > div.p-datatable-wrapper
+  > table
+  > tbody
+  > tr.p-highlight.checkedRow {
+  background-color: #dddddd52 !important;
+}

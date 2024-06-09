@@ -1,0 +1,125 @@
+.modal_safe_div_all {
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.479);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal_safe_div_dialog {
+  border-radius: 15px;
+  background: #f4f4f4;
+  box-shadow: 0px 0px 22px 2px rgba(59, 59, 59, 0.301);
+  width: 1010px;
+  height: max-content;
+  padding: 15px;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.modal_safe_div_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  span:first-of-type {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+  }
+  button {
+    background: none;
+    border: none;
+  }
+}
+
+.modal_safe_div_body {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.modal_safe_body_span_safe_name {
+  color: rgba(26, 26, 26, 0.6);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.modal_safe_div_header_topgroup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal_safe_body_div_accounts {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  cursor: pointer;
+  padding: 8px 15px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 10px;
+  border: 1px solid var(--mono-divider, #e3e3e3);
+  background: var(--mono-white, #fff);
+  margin-top: 14px;
+}
+
+.modal_safe_button_back {
+  padding: 5px 14px;
+  gap: 4px;
+  align-self: stretch;
+  border-radius: 10px;
+  background: var(--color-blue, #1565c0);
+  color: #fff;
+  border: none;
+}
+
+.modal_safe_span_office_name {
+  color: var(--mono-grey, #999);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.modal_sfae_div_footer {
+  display: flex;
+  margin-top: 16px;
+}
+
+@media only screen and (max-width: 950px) {
+  .modal_safe_div_excel {
+    display: none;
+  }
+  .modal_safe_div_dialog {
+    width: 95vw;
+    height: 90vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    transform: scale(0.9);
+    margin-left: 0vw;
+  }
+  .modal_safe_div_body {
+    max-width: 95vw;
+  }
+  .modal_safe_div_header {
+    font-size: 12px !important;
+    flex-direction: column-reverse;
+  }
+  .modal_safe_div_header_topgroup {
+    width: 100%;
+  }
+}

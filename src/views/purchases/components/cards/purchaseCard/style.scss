@@ -1,0 +1,88 @@
+.tabs-purchase {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: 95%;
+    &_item {
+        height: 100%;
+    }
+    &>.p-tabview-panels {
+        height: 100%;
+        &>.p-tabview-panel {
+            height: 100%;
+        }
+    }
+    &>.p-tabview-nav-container {
+        height: 32px;
+        & .p-tabview-nav-content {
+            &>.p-tabview-nav {
+                height: 32px;
+                border: none;
+                margin: 0;
+                &>li {
+                    margin: 0;
+                    height: 32px;
+                    width: 100%;
+                    &:first-child {
+                        &>a {
+                            border-radius: 10px 0px 0px 10px;
+                            border-left: 1px solid rgba(0, 0, 0, 0.12);
+                        }
+                    }
+                    &:nth-last-child(2) {
+                        &>a {
+                            border-radius: 0px 10px 10px 0px;
+                        }
+                    }
+                    &>a {
+                        height: 32px;
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+                        border-top: 1px solid rgba(0, 0, 0, 0.12);
+                        border-right: 1px solid rgba(0, 0, 0, 0.12);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 0;
+                        padding: 5px 49px;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        margin: 0;
+                        & .docs-header {
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            &_icons {
+                                display: flex;
+                                align-items: center;
+                                gap: 8px;
+                                &>div {
+                                    display: flex;
+                                    align-items: center;
+                                }
+                            }
+                        }
+                        & .comments-header {
+                            display: flex;
+                            white-space: nowrap;
+                            word-wrap: break-word;
+                        }
+                    }
+                    &.p-highlight {
+                        &>a {
+                            height: 100%;
+                            border: 1px solid rgba(0, 0, 0, 0.09);
+                            background: rgba(0, 0, 0, 0.09);
+                            color: black;
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &>.p-tabview-panels {
+        padding: 0;
+    }
+}

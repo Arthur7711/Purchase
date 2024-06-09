@@ -1,0 +1,129 @@
+.purch_datepicker_div_all {
+  width: max-content;
+  max-height: 60px;
+  min-height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  // margin-top: -3px;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px #e3e3e3 solid;
+}
+.purch_label_calendar_all_time {
+  margin-top: 10px;
+}
+.purch_datepicker_div_calendars {
+  margin-top: 0px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.purch_datepicker_div_dropdown {
+  display: flex;
+  flex-direction: column;
+  max-height: 50px;
+  min-width: max-content;
+  max-width: 90%;
+  overflow: hidden;
+}
+
+.dropdown_right_header_purchtable {
+  .p-dropdown,
+  .p-dropdown-label {
+    // margin-top: 1px;
+    background: none;
+    border: none;
+  }
+}
+
+.purch_label_date {
+  background: none;
+  margin-bottom: -15px;
+  background: none;
+  color: #999999;
+  margin-left: 12px;
+  font-size: 12px;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.dropdown_right_header_purchtable {
+  margin-top: 0px;
+}
+
+.purch_label_calendar {
+  background: none;
+  margin-bottom: -15px;
+  background: none;
+  color: #999999;
+  margin-left: 12px;
+  font-size: 12px;
+  z-index: 2;
+}
+
+.calendar_header_purch {
+  .p-inputtext {
+    border: none !important;
+  }
+  .p-inputtext:enabled:focus {
+    box-shadow: none !important;
+  }
+  .p-button {
+    background: none !important;
+    border: none;
+  }
+}
+
+.calendar_header_purch_double {
+  .p-inputtext {
+    border: none !important;
+    font-size: 16px !important;
+    font-weight: 400;
+  }
+  .p-inputtext:enabled:focus {
+    box-shadow: none !important;
+  }
+  max-width: 30px;
+  .p-component {
+    min-width: 100px;
+    max-width: 100px;
+  }
+  .p-button {
+    background: none !important;
+    border: none;
+    display: block !important;
+    max-width: 30px !important;
+    margin-left: -50px;
+    margin-top: 3px;
+    padding: 0 !important;
+  }
+}
+
+.purch_picker_calendar_img {
+  max-width: 20px;
+}
+
+@media only screen and (max-width: 650px) {
+  .purch_label_calendar_all_time {
+    margin-top: 13px;
+  }
+  .purch_label_calendar_label {
+    margin-top: -15px;
+  }
+  .purch_datepicker_div_all {
+    * {
+      max-width: 45vw !important;
+    }
+  }
+  .purch_datepicker_div_calendars {
+    height: max-content !important;
+  }
+  .purch_datepicker_div_all {
+    max-height: max-content;
+    display: flex;
+    justify-content: start;
+  }
+}

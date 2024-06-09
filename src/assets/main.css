@@ -1,0 +1,13 @@
+@import './base.css';
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+}
+.p-dropdown {
+  box-shadow: none !important;
+}

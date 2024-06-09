@@ -1,0 +1,178 @@
+            .payments_table_div_all {
+                max-width: 99.8vw;
+                min-width: 99.8vw;
+                min-height: 84vh;
+                max-height: 84vh;
+                background-color: #fff;
+                padding-left: 10px;
+                overflow-y: hidden;
+                overflow-x: hidden;
+                border-radius: 10px;
+                .p-column-filter-row {
+                    background-color: #fff;
+                }
+                .p-filter-column {
+                    background: none !important;
+                    border: none !important;
+                }
+                .columnheader {
+                    display: none !important;
+                }
+                .p-datatable-wrapper {
+                    overflow-x: hidden !important;
+                }
+                .p-checkbox .p-checkbox-box {
+                    border: 1px solid var(--unnamed, #e3e3e3);
+                    border-radius: 2px;
+                    background-color: #ffffff;
+                }
+                .p-checkbox-box.p-highlight {
+                    background-color: #1565c0 !important;
+                }
+                .p-checkbox-box.p-focus {
+                    box-shadow: none !important;
+                    border-color: #666666;
+                }
+                .p-datatable .p-datatable-tbody>tr>td {
+                    padding: 1rem 0.2rem 1rem 0.4rem !important;
+                }
+                .payments_table_table>.p-highlight>tr.p-highlight {
+                    background-color: #666666 !important;
+                }
+                .p-datatable .p-datatable-tbody>tr.p-highlight {
+                    background: none !important;
+                    color: black;
+                }
+                .p-datatable .p-datatable-thead>tr>th {
+                    padding: 0px 0px 0px 0px !important;
+                }
+                .p-datatable .p-datatable-thead>tr {
+                    background-color: #fff !important;
+                }
+                .p-datatable .p-datatable-thead>tr>th {
+                    padding: 0px;
+                }
+                .p-column-filter-menu-button {
+                    display: none;
+                }
+            }
+            
+            .payments_table_div_all::-webkit-scrollbar {
+                min-width: 7px;
+                max-width: 7px;
+                background: white;
+                box-shadow: none;
+            }
+            
+            .payments_table_div_all::-webkit-scrollbar-track {
+                background: rgb(255, 255, 255);
+                box-shadow: none;
+            }
+            
+            .payments_table_div_all::-webkit-scrollbar-thumb {
+                display: block;
+                overflow: visible;
+                opacity: 1 !important;
+                border-radius: 5px;
+                background: #b4b4b4;
+            }
+            
+            div[class^='paytable_col_div_'] {
+                text-align: left;
+                font-size: 14px !important;
+            }
+            
+            .paytable_col_div_description {
+                max-width: 200px;
+                overflow: hidden;
+                white-space: wrap;
+                display: -webkit-box;
+                -webkit-line-clamp: 4;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+            
+            .paytable_col_div_card_holder {
+                display: flex;
+                justify-content: flex-start !important;
+                align-items: center;
+                text-align: left;
+            }
+            
+            .paytable_col_div_legal_entity,
+            .paytable_col_div_contragent {
+                max-width: 120px;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+            
+            .paytable_col_div_legal_entity {
+                white-space: wrap;
+            }
+            
+            .paytable_col_div_debited_price,
+            .paytable_col_div_price {
+                max-width: 110px;
+                text-align: right !important;
+                display: flex;
+                justify-content: flex-end;
+            }
+            
+            .paytable_col_div_purchase_id {
+                cursor: pointer;
+                max-width: 35px;
+                overflow: hidden;
+                &:hover {
+                    color: rgb(21, 101, 192);
+                }
+            }
+            
+            .paytable_col_div_note {
+                display: flex;
+                align-items: flex-start;
+                max-width: 180px;
+                max-height: 4rem;
+                overflow: hidden;
+            }
+            
+            .payments_table_div_spinner {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: fixed;
+                background-color: rgba(112, 112, 112, 0.281);
+                z-index: 100;
+                width: 100vw;
+                margin-left: -10px;
+                height: 100vh;
+            }
+            
+            .paytable_col_div_note_empty {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 40px;
+            }
+            
+            .header_class_payments {
+                display: none;
+            }
+            
+            @media only screen and (max-width: 1760px) {
+                .payments_table_div_all {
+                    .p-datatable-wrapper {
+                        overflow-x: scroll !important;
+                    }
+                }
+            }
+            
+            @media only screen and (max-width: 650px) {
+                .payments_table_div_spinner {
+                    display: none;
+                }
+                .payments_table_div_all {
+                    .paytable_col_div_note {
+                        min-width: 120px;
+                    }
+                }
+            }

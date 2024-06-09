@@ -1,0 +1,70 @@
+.offises_page_top_title {
+  color: var(--unnamed, #1a1a1a);
+  text-align: left;
+  font-family: Source Sans Pro;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.offices_page_top_officesgroup {
+  display: flex;
+  gap: 16px;
+}
+
+.officepage_div_top_table {
+  margin-top: 76px;
+}
+
+.offices_page_div_table {
+  height: 800px;
+  overflow-y: scroll;
+  // width: 850px;
+}
+
+.officepage_div_top_table_spangroup {
+  display: flex;
+}
+
+.officepage_div_top_table_spangroup_labels {
+  display: flex;
+}
+
+.officespage_button_selector {
+  margin-right: 8px;
+  background: none;
+  border: none;
+  margin-top: 32px;
+  margin-bottom: 9px;
+}
+
+.officepage_div_chart_container {
+  width: 80vw;
+  height: 50vh;
+  margin-top: 70px;
+}
+.officepage_div_top_table_spangroup_labels_labels {
+  color: var(--mono-grey, #999);
+  font-size: 14px;
+  font-weight: 700;
+  width: 107px;
+  line-height: 18px;
+}
+@media only screen and (max-width: 650px) {
+  .officepage_div_top_table {
+    overflow: scroll;
+  }
+  .offices_page_div_table {
+    overflow: visible;
+  }
+  .offices_page_top_officesgroup {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+  }
+  .officepage_div_top_table_spangroup_labels {
+    margin-left: 90px;
+  }
+}

@@ -1,0 +1,29 @@
+.dropdown_types_active {
+  .p-dropdown-label {
+    border: 1px #1565c0 solid;
+    color: #1565c0;
+  }
+  .p-dropdown-trigger {
+    display: none;
+  }
+}
+
+.button_clear_types {
+  background: none;
+  border: none;
+  margin-left: 0.5vw;
+  cursor: pointer;
+}
+
+@media only screen and (max-height: 1050px) {
+  .dropprices_div_all {
+    .p-dropdown {
+      justify-content: center;
+      align-items: center;
+    }
+
+    .p-inputtext {
+      padding: 0.5vh !important;
+    }
+  }
+}

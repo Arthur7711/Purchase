@@ -1,0 +1,179 @@
+.listbox_expenses_div_all > .p-listbox > .p-listbox-header {
+  background: none !important;
+  border: none !important;
+  border-radius: 6px;
+  .p-listbox-filter-container > .p-inputtext {
+    margin-left: -5%;
+    max-height: 30px;
+    min-height: 30px;
+    min-width: 246px !important;
+    border-radius: 10px;
+    background-color: #70707050;
+  }
+  .p-listbox-filter-container > .p-icon {
+    display: none;
+  }
+}
+
+.listbox_expenses_div_all {
+  max-width: 246px;
+  .p-listbox-item,
+  .p-highlight {
+    background: none !important;
+  }
+  .p-checkbox > .p-highlight,
+  .p-checkbox-box > .p-highlight,
+  .p-checkbox > .p-focus,
+  .p-checkbox-box > .p-focus {
+    border: 1px black solid !important;
+    border-radius: 5px !important;
+    box-shadow: none !important;
+  }
+  .p-checkbox-focused {
+    border-radius: 5px !important;
+  }
+
+  .p-checkbox-checked {
+    border-radius: 5px !important;
+  }
+}
+.listbox_expenses_div_checkbox .checkbox_active {
+  border: none !important;
+}
+
+.listbox_expenses_div_all > .p-focus {
+  border: none !important;
+  border-color: #1565c000 !important;
+  box-shadow: none !important;
+}
+
+.listbox_expenses_div_all > .p-listbox {
+  background: none !important;
+  border: none !important;
+}
+
+.listbox_expenses_div_all > .p-listbox > .p-listbox-list-wrapper {
+  overflow-y: scroll;
+  max-height: 350px;
+}
+
+.listbox_option_span {
+  margin-left: 2vw;
+}
+
+.listbox_expenses_div_checkbox {
+  display: flex;
+}
+
+.listboxexpens_buttongroup_div {
+  display: grid;
+  grid-template-columns: repeat(4, 75px);
+  font-weight: 600;
+  span {
+    color: #666666;
+  }
+}
+
+.listbox_button_expenses_blue {
+  color: #1565c0;
+}
+
+.listbox_button_expenses {
+  background: none;
+  border: none;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.exp_label_listbox {
+  width: 30vw;
+  height: 4vh;
+  display: block;
+}
+
+.p-checkbox .p-checkbox-box {
+  background: none;
+}
+
+.checkbox_active > .p-checkbox .p-checkbox-box .p-checkbox-icon {
+  color: rgb(0, 0, 0);
+}
+// .listbox_expenses_div_checkbox > .p-checkbox .p-checkbox-box .p-checkbox-icon {
+//   color: rgb(0, 0, 0);
+// }
+
+.listbox_expenses_div_checkbox {
+  // margin-top: -13px;
+  // padding: 1%;
+  line-height: 20px;
+}
+
+.listbox_expenses_div_checkbox > .p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box:hover {
+  border-color: none !important;
+}
+
+.listbox_option_span {
+  margin-left: 10px;
+}
+
+.listbox_expenses_div_checkbox > .p-checkbox > .p-checkbox-box {
+  border-color: none !important;
+  background: none !important;
+}
+
+.listbox_expenses_div_all > .p-listbox > .p-listbox-list-wrapper > .p-listbox-list > .p-highlight {
+  background: none !important;
+  color: black !important;
+}
+
+.listbox_expenses_div_all
+  > .p-listbox
+  > .p-listbox-list-wrapper
+  > .p-listbox-list
+  > .p-listbox-item {
+  margin-top: -8.5px !important;
+}
+
+.listbox_exp_div_flex {
+  display: flex;
+  justify-content: space-between;
+  // margin-top: 0px;
+}
+
+.listbox_option_span {
+  color: black;
+  font-size: 15px;
+}
+
+.exp_span_procent {
+  color: #666666;
+  font-size: 13px;
+}
+
+.listbox_expenses_div_checkbox {
+  margin-bottom: 12px;
+  max-height: 22px;
+}
+
+@media only screen and (max-width: 650px) {
+  .listbox_expenses_div_all {
+    max-width: 75vw;
+    .p-listbox-item {
+      min-width: 70vw !important;
+      max-width: 70vw !important;
+    }
+    .listbox_expenses_div_checkbox {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .exp_label_listbox {
+      width: 50vw;
+    }
+  }
+  .listbox_expenses_div_all > .p-listbox > .p-listbox-header {
+    .p-listbox-filter-container > .p-inputtext {
+      min-width: 70vw !important;
+    }
+  }
+}

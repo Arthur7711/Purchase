@@ -1,0 +1,334 @@
+@import '../../assets/colors.scss';
+.purchheader_div_all {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+  justify-content: space-between;
+  min-width: 100vw;
+}
+
+.headerpurch_div_upper_flex {
+  display: flex;
+  width: 40vw;
+  margin-left: 50px;
+  position: relative;
+}
+
+.fact-btn {
+  cursor: pointer;
+}
+
+.headerpurch_div_upper_bg {
+  border-radius: 10px 10px 0px 0px;
+  position: relative;
+  margin-left: -5px;
+}
+
+.purch_header_hr_container_active {
+  max-width: 100vw;
+  height: 10px;
+  margin-left: -45px;
+  position: relative;
+  border-radius: 10px 10px 0px 0px;
+  position: relative;
+  margin-left: -5px;
+}
+
+.purch_header_hr_active_purch {
+  max-width: 99.8vw;
+  min-width: 99.8vw;
+  z-index: 0;
+  height: 2px;
+  background: rgb(82, 134, 200);
+  background: linear-gradient(90deg, rgba(82, 134, 200, 1) 0%, rgb(238, 239, 240) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: -10px;
+  right: 0;
+  bottom: 0;
+}
+
+.purch_header_hr_container_active_position {
+  max-width: 120vw;
+  height: 10px;
+  left: -350px;
+  z-index: 5;
+  position: relative;
+}
+
+.purch_header_hr_active_position {
+  max-width: 112vw;
+  min-width: 112vw;
+  z-index: 100;
+  height: 2px;
+  background: rgb(82, 134, 200);
+  background: linear-gradient(
+    90deg,
+    rgba(227, 241, 255, 1) 0%,
+    rgb(123, 169, 230) 14%,
+    rgb(95, 139, 192) 24%,
+    rgba(210, 232, 247, 1) 100%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.purch_header_hr_container_active_favourite {
+  max-width: 102vw;
+  height: 10px;
+  left: -600px;
+  position: relative;
+}
+
+.purch_header_hr_active_favourite {
+  max-width: 120.3vw;
+  min-width: 120.3vw;
+  z-index: 100;
+  margin-bottom: 10px;
+  height: 2px;
+  background: rgb(82, 134, 200);
+  background: linear-gradient(
+    90deg,
+    rgba(227, 241, 255, 1) 0%,
+    rgb(123, 169, 230) 22%,
+    rgb(95, 139, 192) 30%,
+    rgba(210, 232, 247, 1) 100%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.purch_header_purch_div_top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -7.5px;
+}
+
+.purch_header_button_plus,
+.purch_header_button_plus_active {
+  background: none;
+  border: none;
+  margin-top: -5px;
+  font-size: 40px;
+}
+
+.purch_header_button_plus {
+  color: rgba(153, 153, 153, 1);
+}
+
+.purch_header_button_plus_active {
+  cursor: pointer;
+  color: white;
+}
+
+.headerpurch_div_right-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-right: 15px;
+}
+
+.headerpurch_div_right-group_payments {
+  display: flex;
+  justify-content: end;
+  width: 99vw;
+  align-items: start;
+}
+
+.headerpurch_div_display_allprice {
+  width: max-content;
+  height: 60px;
+  border: 1px #e3e3e3 solid;
+  // margin-left: 21vw;
+  // margin-top: -3px;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  hr {
+    rotate: 90deg;
+    max-width: 40px;
+    min-width: 40px;
+    max-height: 2px;
+    z-index: 2;
+    border-color: #e3e3e348;
+  }
+}
+
+.headerpurch_div_datepicker {
+  // margin-left: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.headerpurch_img_display_left {
+  max-width: 18px;
+  max-height: 12px;
+  margin-left: -3px;
+  margin-right: 5px;
+}
+
+.headerpurch_div_inside_left {
+  margin-left: 4px;
+  margin-right: 0px;
+}
+
+.headerpurch_div_display_left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerpurch_div_display_right {
+  padding-right: 1px;
+}
+
+.headerpurch_div_table_setup {
+  margin-left: 55px;
+  margin-top: 12px;
+  float: right;
+}
+
+.headerpurch_button_open_overlay {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.headerpurch_div_show_options {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 20px;
+  background-color: #fff;
+  padding: 5%;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 40;
+  height: max-content;
+  width: max-content;
+  right: 0;
+  button {
+    border: none;
+    background: none;
+    font-size: 14px;
+    font-weight: 600;
+    &:hover {
+      color: $purch_blue;
+    }
+  }
+}
+
+.headerpurch_button_open_options {
+  background: none;
+  border: none;
+  margin-right: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  font-size: 14px;
+  font-weight: 600;
+  color: $purch_blue;
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 1201px) {
+  .headerpurch_div_right-group {
+    margin-left: -100% !important;
+  }
+  .headerpurch_div_right-group_payments {
+    margin-left: 0% !important;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 850px) {
+  .headerpurch_div_right-group {
+    display: flex;
+    margin-left: -100%;
+  }
+  .headerpurch_div_right-group_payments {
+    margin-left: 0% !important;
+  }
+  .purch_header_hr_active_position,
+  .purch_header_hr_active_favourite,
+  .purch_header_hr_container_active {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .purchheader_div_all {
+    min-width: 100vw;
+    overflow: hidden;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+  .purch_header_hr_container_active_favourite,
+  .purch_header_hr_active_position,
+  .purch_header_hr_active_favourite,
+  .purch_header_hr_container_active {
+    display: none;
+  }
+  .headerpurch_div_upper_bg {
+    font-size: 11px !important;
+    margin-top: 10px;
+  }
+  .headerpurch_div_right-group {
+    margin: 0 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+    // margin-right: 5vw !important;
+    font-size: 13px;
+  }
+  .headerpurch_table_amount_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+  .headerpurch_div_display_allprice {
+    height: 100%;
+    margin: 0;
+    padding: 0% 2% 0% 2%;
+    display: flex;
+    width: 90vw;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: start;
+    .headerpurch_div_display_left_block {
+      height: 100%;
+    }
+    hr {
+      opacity: 0;
+    }
+  }
+  .headerpurch_div_datepicker {
+    margin-top: 3%;
+    max-width: 90vw;
+    &_container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+    }
+  }
+  .tablesetup_mapping_items {
+    margin-top: 20px;
+    height: 35px;
+  }
+}

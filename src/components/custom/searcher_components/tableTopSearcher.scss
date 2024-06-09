@@ -1,0 +1,33 @@
+.table_top_searcher_div_all {
+  width: 60vw;
+  height: 20vh;
+}
+
+.table_top_searcher_div_searchgroup {
+  gap: 20px;
+  width: 100%;
+}
+
+.table_top_searcher_input_search {
+  width: 100%;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  background: none;
+  border-bottom: 1px #e3e3e3 solid;
+  height: 2rem;
+  outline: none;
+}
+
+.table_top_searcher_button_search {
+  display: flex;
+  padding: 7px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  align-self: stretch;
+  border-radius: 10px;
+  background: #1565c0;
+  color: #ffffff;
+  border: none;
+}

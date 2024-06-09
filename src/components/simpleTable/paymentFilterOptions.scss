@@ -1,0 +1,30 @@
+.payment_input_purchase_id {
+  width: 78px;
+  margin-left: -10px;
+  overflow: hidden;
+  .position_input_filter {
+    width: 90%;
+  }
+}
+
+.payment_input_debited_price,
+.payment_input_price {
+  width: 110px !important;
+  overflow: hidden;
+  .position_input_filter {
+    width: 90%;
+  }
+}
+
+.payment_input_note {
+  margin-left: -10px;
+  overflow: hidden;
+  .position_input_filter {
+    width: 90%;
+  }
+}
+
+.payment_input_description {
+  min-width: 150px !important;
+  margin-left: -10px;
+}

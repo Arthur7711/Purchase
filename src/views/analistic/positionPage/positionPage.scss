@@ -1,0 +1,101 @@
+.position_div_top {
+  margin-top: -6vh;
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: #fff;
+  width: 400px;
+  // max-width: max-content;
+  // min-width: max-content;
+  overflow: hidden;
+  position: relative;
+  padding-left: 1%;
+  padding-right: 2%;
+  border-radius: 15px;
+  max-height: 4vh;
+  min-height: 4vh;
+  margin-left: -6.5%;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.position_span_one {
+  cursor: pointer;
+}
+
+.position_span_second {
+  margin-left: 2%;
+  color: #1565c0;
+}
+
+.position_div_center {
+  padding: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.position_div_right-buttongroup {
+  display: flex;
+}
+
+.position_div_undertable {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: #1565c0;
+  margin-top: 15vh;
+}
+
+.position_div_footer_second {
+  margin-left: 6vw;
+}
+
+.position_div_undertable > div > span {
+  color: #999999;
+}
+
+.position_div_undertable > div > h3 {
+  color: black;
+  font-weight: 700;
+}
+
+.position_div_middle_graph {
+  display: flex;
+  justify-content: space-around;
+}
+
+.datatable_position {
+  margin-left: -3.3vw;
+}
+
+.position_div_all {
+  padding-left: 4vw;
+}
+
+.position_loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35vh;
+}
+
+.pie_chart_position_div {
+  transition: all 1s ease-in-out;
+  min-width: 20vw;
+  max-width: 20vw;
+  max-height: 20vh;
+}
+
+.position_div_top:after {
+  content: '';
+  text-align: right;
+  position: absolute;
+  bottom: 2vh;
+  right: 0;
+  left: 91%;
+  width: 10%;
+  height: 1.2em;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white 70%);
+  // filter: blur(1px);
+  pointer-events: none;
+}
